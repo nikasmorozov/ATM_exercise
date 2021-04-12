@@ -8,6 +8,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+//      viena account ivedame per skaneri, kitas sukuriamas automatiskai, kad butu greiciau testuoti.
         Account newAccount1 = new Account("Sąskaita 1", "generatedInClass", 0, 0000);
         Account newAccount2 = new Account("Sąskaita 2", "generatedInClass", 1000, 0000);
 
@@ -15,7 +16,7 @@ public class Main {
         double providedBalance = scanner.nextDouble();
 
         while (providedBalance >= 1000000) {
-            System.out.println("Viršijote limitą. Įveskite " + newAccount1.getName() + " (" + newAccount1.getNumber() + ") balansą iš naujo");
+            System.out.println("Viršijote sąskaitos dydžio limitą. Įveskite " + newAccount1.getName() + " (" + newAccount1.getNumber() + ") balansą iš naujo");
             providedBalance = scanner.nextDouble();
         }
         newAccount1.setBalance(providedBalance);
