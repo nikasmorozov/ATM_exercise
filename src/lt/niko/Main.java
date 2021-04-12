@@ -85,7 +85,7 @@ public class Main {
         double withdrawalAmount = scanner.nextDouble();
 
         if(withdrawalAmount <= accountToWithdraw.getBalance()) {
-            accountToWithdraw.setBalance(account1.getBalance() - withdrawalAmount);
+            accountToWithdraw.setBalance(accountToWithdraw.getBalance() - withdrawalAmount);
             String accountPreview = accountToWithdraw.getNumber().substring(0, 2) + "xxxxxxxxxxxxx" + accountToWithdraw.getNumber().substring(15);
             System.out.println(accountToWithdraw.getName() + " (" + accountPreview + ") balansas yra: " + accountToWithdraw.getBalance());
         } else {
