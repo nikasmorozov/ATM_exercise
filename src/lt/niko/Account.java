@@ -34,7 +34,7 @@ public class Account {
     }
 
     public void setNumber(String number) {
-        long leftLimit = 0;
+        long leftLimit = 100000000000000000L;
         long rightLimit = 1000000000000000000L;
         long numberWithoutPrefix = leftLimit + (long) (Math.random() * (rightLimit - leftLimit));
         number = String.valueOf(numberWithoutPrefix);
